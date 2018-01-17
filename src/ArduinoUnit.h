@@ -27,6 +27,9 @@
 #endif
 #endif
 
+#define memcpy_P(a, b, c) memcpy(a, b, c)
+#define strlen_P(a) strlen(a)
+
 // Workaround for Arduino Due
 #if defined(__arm__) && !defined(PROGMEM)
 #define PROGMEM
